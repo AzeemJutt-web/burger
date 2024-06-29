@@ -1,0 +1,217 @@
+
+
+.bg-img {
+    background-image: url(images/Burger\ background.png);
+}
+.nav {
+    width: 100%;
+    height: 100px;
+    padding: 2vw 4vw;
+}
+.logo {
+    margin-left: 4vw;
+}
+
+.nav-part2 h6 {
+    margin-left: 10vw;
+}
+.nav-part2 i {
+    display: none;
+}
+.nav-part2 a {
+    color: black;
+}
+.fl-box1 {
+    display: flex;
+    width: 100%;
+    
+}
+.fl-div1 {
+    width: 45%;
+    padding: 5vw 4vw;
+}
+.fl-div2 {
+    width: 55%;
+}
+.fl-div1 h6 {
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px dashed black;
+    padding: 0.5vw 1vw;
+    width: 28vw;
+}
+.fl-1h1 {
+    font-size: 80px;
+}
+
+.fl-box2 {
+    display: flex;
+    width: 100%;
+}
+.fl-div3 {
+    width: 50%;
+    padding: 5vw 2vw 5vw 3vw;
+}
+.fl-div4 {
+    width: 50%;
+    padding: 5vw 2vw 5vw 1vw;
+}
+.btn1 {
+    border: 1px hidden;
+    padding: 0.5vw 1vw;
+    background-color: yellow;
+}
+.choose {
+    font-size: 40px;
+    font-weight: 800;
+}
+.container p {
+    text-align: center;
+    font-size: 15px;
+}
+.fl-box3 {
+    display: flex;
+    gap: 10vw;
+    justify-content: center;
+}
+.fl-div5 p {
+    font-size: 10px;
+}
+.fl-div5 p {
+    text-align: center;
+}
+.fl-div5 h2 {
+    text-align: center;
+}
+.fl-div6 p {
+    font-size: 10px;
+}
+.fl-div6 p {
+    text-align: center;
+}
+.fl-div6 h2 {
+    text-align: center;
+}
+.fl-div7 p {
+    font-size: 10px;
+}
+.fl-div7 p {
+    text-align: center;
+}
+.fl-div7 h2 {
+    text-align: center;
+}
+
+.fl-box4 {
+    display: flex;
+    width: 90%;
+    background-color: white;
+    box-shadow: 1px 1px 5px 5px whitesmoke;
+    margin-top: 9vw;
+}
+.fl-div8 {
+    padding: 2vw;
+}
+.fl-div8 p {
+    text-align: justify;
+    margin-top: 1.5vw;
+}
+.fl-div8 h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+.fl-div8 h6 {
+    margin-top: 1.2vw;
+    margin-bottom: -0.6vw;
+}
+.fl-div9 img {
+    padding: 1vw;
+}
+
+.fl-box5 {
+    display: flex;
+    margin-top: 4vw;
+}
+.fl-div11 {
+    margin-left: 20.3vw;
+    margin-top: 3vw;
+}
+.fl-div11 h1 {
+    font-size: 38px;
+    font-weight: 800;
+    margin-top: -0.4vw;
+}
+
+.fl-box6 {
+    display: flex;
+    margin-left: 10vw;
+}
+input[type=text], input[type=email], input[type=number], input[type=date], input[type=time] {
+    width: 25vw;
+    height: 3.1vw;
+}
+.fl-div12 img {
+    margin-left: 6vw;
+}
+.fl-div13 {
+    margin-left: 5vw;
+}
+.fl-div14 {
+    margin-left: 1.5vw;
+}
+.fl-div15 img {
+    margin-left: 6vw;
+}
+
+.footer {
+    background-color: black;
+    display: flex;
+    width: 90%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(images/Burger\ img11.gif);
+    background-attachment: fixed;
+    opacity: 0.6;
+}
+.ftr-div1 {
+    margin-top: 5vw;
+    margin-left: 3vw;
+    color: white;
+}
+.footer p {
+    font-size: 13px;
+    margin-top: 2.4vw;
+}
+.ftr-div2 {
+    margin-top: 13vw;
+    margin-left: 7vw;
+}
+.ftr-div2 a {
+    color: white;
+    text-decoration: none;
+    margin-left: 3vw;
+    font-size: 18px;
+    margin-top: -2vw;
+}
+
+
+
+
+
+
+@media (max-width:600px) {
+    .bg-img {
+        width: 100%;
+    }
+    .nav {
+        justify-content: left;
+    }
+    .nav-part3 ul {
+        display: none;
+    }
+    .fl-box1 {
+        align-items: center;
+    }
+
+}
