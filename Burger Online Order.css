@@ -1,217 +1,829 @@
+body {
+    width: 100%;
+    height: 100vh;
+  }
 
-
-.bg-img {
+  header {
     background-image: url(images/Burger\ background.png);
-}
-.nav {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
     width: 100%;
-    height: 100px;
-    padding: 2vw 4vw;
-}
-.logo {
-    margin-left: 4vw;
-}
+  }
 
-.nav-part2 h6 {
-    margin-left: 10vw;
-}
-.nav-part2 i {
-    display: none;
-}
-.nav-part2 a {
+  .nav-link {
     color: black;
-}
-.fl-box1 {
+    font-size: 15.5px;
+    transition: all 0.5 ease-out;
+  }
+
+  .nav-link:hover {
+    color: blue;
+  }
+
+  .logo img {
+    object-fit: cover;
+    height: 45px;
+    margin-left: 10%;
+  }
+
+  nav ul {
+    margin-left: auto;
+  }
+
+  .burger-week {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    
-}
-.fl-div1 {
+  }
+
+  .week-left {
     width: 45%;
-    padding: 5vw 4vw;
-}
-.fl-div2 {
-    width: 55%;
-}
-.fl-div1 h6 {
+    margin-top: 20vh;
+    text-align: center;
+  }
+
+  .week-left h6 {
     letter-spacing: -0.1vw;
     word-spacing: -0.1vw;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: 1px dashed black;
     padding: 0.5vw 1vw;
-    width: 28vw;
-}
-.fl-1h1 {
-    font-size: 80px;
-}
+    width: 64%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-.fl-box2 {
+  .week-left h1:nth-child(2) {
+    font-size: 80px;
+  }
+
+  .week-left h1:nth-child(3) {
+    font-size: 50px;
+    font-weight: 800;
+    margin-top: -1.5vw;
+  }
+
+  .week-right {
+    width: 55%;
+  }
+
+  .week-right img {
+    object-fit: cover;
+    width: 600px;
+    height: 540px;
+  }
+
+  /*2nd Page*/
+  .popular {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
-}
-.fl-div3 {
-    width: 50%;
-    padding: 5vw 2vw 5vw 3vw;
-}
-.fl-div4 {
-    width: 50%;
-    padding: 5vw 2vw 5vw 1vw;
-}
-.btn1 {
+    height: 75vh;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+  }
+
+  .popular-left img {
+    width: 500px;
+    height: 50vh;
+    object-fit: fill;
+  }
+
+  .popular-right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 0%;
+  }
+
+  .popular-right img {
+    width: 500px;
+    height: 22.5vh;
+    object-fit: fill;
+    border-radius: 0;
+  }
+
+  .choose-btn button {
     border: 1px hidden;
     padding: 0.5vw 1vw;
     background-color: yellow;
-}
-.choose {
+  }
+
+  .choose-btn h1 {
     font-size: 40px;
     font-weight: 800;
-}
-.container p {
-    text-align: center;
-    font-size: 15px;
-}
-.fl-box3 {
-    display: flex;
-    gap: 10vw;
-    justify-content: center;
-}
-.fl-div5 p {
-    font-size: 10px;
-}
-.fl-div5 p {
-    text-align: center;
-}
-.fl-div5 h2 {
-    text-align: center;
-}
-.fl-div6 p {
-    font-size: 10px;
-}
-.fl-div6 p {
-    text-align: center;
-}
-.fl-div6 h2 {
-    text-align: center;
-}
-.fl-div7 p {
-    font-size: 10px;
-}
-.fl-div7 p {
-    text-align: center;
-}
-.fl-div7 h2 {
-    text-align: center;
-}
+  }
 
-.fl-box4 {
+  .choose-btn p {
+    width: 70%;
+    font-size: 15px;
+    text-align: justify;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .choose {
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+  }
+
+  .choose button {
+    background-color: rgba(220, 20, 60, 0.742);
+    color: white;
+    transition: all 0.2s ease-in;
+  }
+
+  .choose button:hover {
+    background-color: crimson;
+    color: white;
+    font-weight: bold;
+  }
+
+  .choose h2 {
+    text-align: center;
+    transition: all 1s ease-out;
+  }
+
+  .choose h2:hover {
+    color: crimson;
+  }
+
+  .choose p {
+    font-size: 12px;
+  }
+
+  .choose-left img {
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+  }
+
+  .choose-mid img {
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+  }
+
+  .choose-right img {
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+  }
+
+  /*4th Page*/
+  .event {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
     width: 90%;
     background-color: white;
     box-shadow: 1px 1px 5px 5px whitesmoke;
-    margin-top: 9vw;
-}
-.fl-div8 {
-    padding: 2vw;
-}
-.fl-div8 p {
+    margin-top: 15vh;
+    object-fit: cover;
+  }
+
+  .event-left {
+    padding: 25px;
+    width: 50%;
+  }
+
+  .event-left p {
     text-align: justify;
-    margin-top: 1.5vw;
-}
-.fl-div8 h1 {
+    margin-top: 2.5vh;
+    width: 80%;
+  }
+
+  .event-left h1 {
     font-size: 40px;
     font-weight: 700;
-}
-.fl-div8 h6 {
+  }
+
+  .event-left h6 {
     margin-top: 1.2vw;
     margin-bottom: -0.6vw;
-}
-.fl-div9 img {
-    padding: 1vw;
-}
+  }
 
-.fl-box5 {
-    display: flex;
-    margin-top: 4vw;
-}
-.fl-div11 {
-    margin-left: 20.3vw;
-    margin-top: 3vw;
-}
-.fl-div11 h1 {
+  .event-right {
+    padding: 25px;
+    width: 49%;
+  }
+
+  .event-right img {
+    width: 100%;
+    height: 300px;
+  }
+
+  /*Book Page*/
+  .book-text {
+    margin-top: 18vh;
+    position: relative;
+  }
+
+  .book-text h6 {
+    text-align: center;
+  }
+
+  .book-text h1 {
     font-size: 38px;
     font-weight: 800;
-    margin-top: -0.4vw;
-}
+    margin-top: -0.5vh;
+    text-align: center;
+  }
 
-.fl-box6 {
+  .book-text img {
+    position: absolute;
+    top: -7vh;
+  }
+
+  .form {
+    margin-top: 15vh;
     display: flex;
-    margin-left: 10vw;
-}
-input[type=text], input[type=email], input[type=number], input[type=date], input[type=time] {
-    width: 25vw;
-    height: 3.1vw;
-}
-.fl-div12 img {
-    margin-left: 6vw;
-}
-.fl-div13 {
-    margin-left: 5vw;
-}
-.fl-div14 {
-    margin-left: 1.5vw;
-}
-.fl-div15 img {
-    margin-left: 6vw;
-}
-
-.footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 100px;
+    width: 50%;
+    height: 80vh;
     background-color: black;
-    display: flex;
-    width: 90%;
-    background-position: center;
-    background-size: cover;
-    background-image: url(images/Burger\ img11.gif);
-    background-attachment: fixed;
-    opacity: 0.6;
-}
-.ftr-div1 {
-    margin-top: 5vw;
-    margin-left: 3vw;
     color: white;
-}
-.footer p {
-    font-size: 13px;
-    margin-top: 2.4vw;
-}
-.ftr-div2 {
-    margin-top: 13vw;
-    margin-left: 7vw;
-}
-.ftr-div2 a {
+    border: none;
+    border-top-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 30%;
+    border-top-right-radius: 30%;
+  }
+
+  .form-left,
+  .form-right {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+  }
+
+  .form input {
+    width: 100%;
+    height: 6vh;
+    border: none;
+    outline: none;
+    border-bottom: 1.5px solid black;
+    background-color: whitesmoke;
+    color: black;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .form input:focus {
+    border: none;
+    border-bottom: 1.5px solid crimson;
+  }
+
+  .form-right button {
+    background-color: rgba(220, 20, 60, 0.742);
+    color: white;
+    transition: all 0.2s ease-in;
+  }
+
+  .form-right button:hover {
+    background-color: crimson;
+    color: white;
+    font-weight: bold;
+  }
+  .book-cover {
+    position: relative;
+  }
+  .book-cover img:nth-child(1) {
+    position: absolute;
+    top: 20%;
+    height: 300px;
+    left: 10%;
+  }
+  .book-cover img:nth-child(2) {
+    position: absolute;
+    right: 0;
+    top: 53vh;
+    width: 270px;
+    height: 350px;
+  }
+  /*Footer*/
+  .footer {
+    background-image: url(https://img.freepik.com/premium-photo/two-burgers-with-smoke-coming-out-them-one-with-tomato-cheese-burger-it_878882-4033.jpg?w=360);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 33vh;
+    color: white;
+    width: 90%;
+    gap: 80px;
+  }
+  .ft-left {
+    margin-top: 7vh;
+    width: 40%;
+  }
+  .ft-left p {
+    width: 90%;
+    text-align: justify;
+    margin-top: 7vh;
+    font-size: 15px;
+  }
+  .ft-right {
+    width: 45%;
+  }
+  .ft-right i:nth-child(1) {
+    color: crimson;
+    font-size: 24px;
+  }
+  .ft-right i:nth-child(3) {
+    color: crimson;
+    font-size: 21px;
+    margin-top: 1vw;
+  }
+  .ft-right a {
     color: white;
     text-decoration: none;
-    margin-left: 3vw;
-    font-size: 18px;
-    margin-top: -2vw;
+    margin-left: 37px;
+  }
+  
+
+
+
+
+  @media (max-width: 1247px) {
+    .week-left h6 {
+      width: 70%;
+    }
+  }
+
+  @media (max-width: 1150px) {
+    .week-left h6 {
+      width: 75%;
+    }
+  }
+
+  @media (max-width: 1089px) {
+    .week-left h6 {
+      font-size: 15px;
+    }
+
+    .week-left h1:nth-child(2) {
+      font-size: 73px;
+    }
+
+    .week-left h1:nth-child(3) {
+      font-size: 44px;
+    }
+
+    .week-right img {
+      width: 500px;
+      height: 450px;
+    }
+  }
+@media (max-width: 1080px) {
+.book-cover img:nth-child(2) {
+  width: 240px;
+  height: 310px;
 }
-
-
-
-
-
-
-@media (max-width:600px) {
-    .bg-img {
-        width: 100%;
-    }
-    .nav {
-        justify-content: left;
-    }
-    .nav-part3 ul {
-        display: none;
-    }
-    .fl-box1 {
-        align-items: center;
-    }
-
 }
+  @media (max-width: 1035px) {
+    .popular-left img {
+      width: 400px;
+    }
+
+    .popular-right img {
+      width: 400px;
+    }
+  }
+  @media (max-width: 1024px) {
+    .ft-left p {
+      margin-top: 5vh;
+      font-size: 14.5px;
+    } 
+  }
+  @media (max-width: 1015px) {
+    .week-left h6 {
+      width: 85%;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .logo {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  @media (max-width: 960px) {
+    .book-cover img:nth-child(2) {
+      width: 210px;
+      height: 275px;
+    }
+    .ft-left p {
+      width: 100%;
+    }
+  }
+  @media (max-width: 907px) {
+    .week-left h6 {
+      width: 90%;
+    }
+
+    .week-left h1:nth-child(2) {
+      font-size: 70px;
+    }
+
+    .week-left h1:nth-child(3) {
+      font-size: 40px;
+    }
+
+    .week-right img {
+      width: 450px;
+      height: 400px;
+    }
+    .ft-left p {
+      margin-top: 3vh;
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 875px) {
+    .ft-left p {
+      width: 110%;
+    }
+    .ft-left {
+      margin-top: 7vh;
+    }
+  }
+  @media (max-width: 840px) {
+    .book-cover img:nth-child(2) {
+      width: 190px;
+      height: 250px;
+    }
+  }
+  @media (max-width: 835px) {
+    .popular {
+      width: 100%;
+      padding-top: 20px;
+      gap: 15px;
+    }
+
+    .popular-left {
+      width: 70%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .popular-right {
+      gap: 15px;
+    }
+
+    .choose-btn {
+      margin-top: 39vh;
+    }
+  }
+
+  @media (max-width: 818px) {
+    .week-left h6 {
+      font-size: 14px;
+    }
+
+    .week-left h1:nth-child(2) {
+      font-size: 66px;
+    }
+
+    .week-left h1:nth-child(3) {
+      font-size: 36px;
+    }
+
+    .week-right img {
+      width: 420px;
+      height: 370px;
+    }
+  }
+  @media (max-width: 800px) {
+    .ft-left {
+      margin-top: 5vh;
+    }
+  }
+  @media (max-width: 768px) {
+
+    .week-left,
+    .week-right {
+      width: 100%;
+    }
+
+    .week-left {
+      margin-top: 10vh;
+    }
+
+    .week-left h6 {
+      width: 50%;
+      font-size: 15px;
+    }
+
+    .week-left h1:nth-child(2) {
+      font-size: 74px;
+    }
+
+    .week-left h1:nth-child(3) {
+      font-size: 45px;
+    }
+
+    .week-right img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 500px;
+      height: 450px;
+    }
+
+    .event-left {
+      width: 100%;
+    }
+
+    .event-left p {
+      width: 95%;
+    }
+
+    .event-right {
+      width: 100%;
+    }
+    .book-text h6 {
+      font-size: 15px;
+    }
+
+    .book-text h1 {
+      font-size: 35px;
+      font-weight: 700;
+    }
+
+    .book-text img {
+      width: 120px;
+      height: 120px;
+    }
+    .book-cover img:nth-child(2) {
+      width: 165px;
+      height: 230px;
+    }
+  }
+  @media (max-width: 700px) {
+    .form-right button {
+      font-size: 15px;
+    }
+  }
+  @media (max-width: 663px) {
+    .form-right button {
+      font-size: 13px;
+    }
+  }
+  @media (max-width: 668px) {
+    .form {
+      gap: 50px;
+    }
+  }
+  @media (max-width: 660px) {
+    .book-cover img:nth-child(2) {
+      width: 150px;
+      height: 210px;
+    }
+  }
+  @media (max-width: 640px) {
+    .choose-left img {
+      height: 300px;
+      width: 300px;
+    }
+
+    .choose-mid img {
+      height: 300px;
+      width: 300px;
+    }
+
+    .choose-right img {
+      height: 300px;
+      width: 300px;
+    }
+
+    .choose {
+      gap: 50px;
+    }
+  }
+  @media (max-width: 610px) {
+    .ft-left p {
+      width: 120%;
+      margin-top: 2vh;
+      font-size: 13px;
+    }
+  }
+  @media (max-width: 600px) {
+    .book-cover img:nth-child(2) {
+      width: 135px;
+      height: 190px;
+    }
+    .form-right button {
+      font-size: 11px;
+    }
+   .ft-left, .ft-right {
+    width: 90%;
+   } 
+   .ft-left p {
+    width: 90%;
+    margin-top: 2vh;
+    font-size: 13px;
+  }
+   .footer {
+    gap: 10px;
+   }
+  }
+  @media (max-width: 560px) {
+    .week-left h6 {
+      width: 65%;
+    }
+  }
+  @media (max-width: 550px) {
+    .book-text h6 {
+      font-size: 14.5px;
+    }
+
+    .book-text h1 {
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    .book-text img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  @media (max-width: 540px) {
+    .book-cover img:nth-child(1) {
+      width: 60px;
+      height: 210px;
+    }
+    .book-cover img:nth-child(2) {
+      width: 120px;
+      height: 150px;
+    }
+    .form {
+      height: 60vh;
+    }
+  }
+  @media (max-width: 525px) {
+    .form-right button {
+      font-size: 9px;
+    }
+  }
+  @media (max-width: 500px) {
+    .week-left h1:nth-child(2) {
+      font-size: 69px;
+    }
+
+    .week-left h1:nth-child(3) {
+      font-size: 40px;
+    }
+
+    .week-right img {
+      width: 450px;
+      height: 405px;
+    }
+
+    .event-left p {
+      width: 100%;
+    }
+  }
+  @media (max-width: 480px) {
+    .book-text h6 {
+      font-size: 14px;
+    }
+
+    .book-text h1 {
+      font-size: 30px;
+      font-weight: 600;
+    }
+
+    .book-text img {
+      width: 90px;
+      height: 90px;
+    }
+    .book-cover img:nth-child(2) {
+      width: 105px;
+      height: 130px;
+      top: 60vh;
+    }
+    .form {
+      gap: 20px;
+    }
+  }
+  @media (max-width: 456px) {
+    .form-right button {
+      padding: 9px;
+    }
+  }
+  @media (max-width: 450px) {
+    .week-left h1:nth-child(2) {
+      font-size: 60px;
+    }
+
+    .week-left h1:nth-child(3) {
+      font-size: 35px;
+    }
+
+    .week-right img {
+      width: 400px;
+      height: 350px;
+    }
+  }
+  @media (max-width: 435px) {
+    .book-text h6 {
+      font-size: 13.5px;
+    }
+
+    .book-text h1 {
+      font-size: 27px;
+      font-weight: 600;
+    }
+
+    .book-text img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  @media (max-width: 422px) {
+    .form-right button {
+      padding: 6px;
+      width: 101%;
+      height: 6.5vh;
+    }
+  }
+  @media (max-width: 400px) {
+    .week-left h1:nth-child(2) {
+      font-size: 55px;
+    }
+
+    .week-left h1:nth-child(3) {
+      font-size: 30px;
+    }
+
+    .week-right img {
+      width: 350px;
+      height: 300px;
+    }
+    .book-cover img:nth-child(1) {
+      width: 50px;
+      height: 195px;
+    }
+  }
+  @media (max-width: 390px) {
+    .book-text h6 {
+      font-size: 13px;
+    }
+
+    .book-text h1 {
+      font-size: 25px;
+      font-weight: 500;
+    }
+
+    .book-text img {
+      width: 70px;
+      height: 70px;
+    }
+  }
+  @media (max-width: 385px) {
+    .form-right button {
+      padding: 3px;
+    }
+  }
+  @media (max-width: 350px) {
+    .book-text h6 {
+      font-size: 13px;
+    }
+
+    .book-text h1 {
+      font-size: 25px;
+      font-weight: 500;
+    }
+
+    .book-text img {
+      width: 60px;
+      height: 60px;
+    }
+    .form-right button {
+      padding: 0;
+    }
+  }
+  @media (max-width: 330px) {
+    .book-cover img:nth-child(1) {
+      width: 45px;
+      height: 190px;
+    }
+  }
